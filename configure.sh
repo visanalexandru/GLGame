@@ -3,9 +3,12 @@
 set -e
 cd deps/
 
+# Download glfw 3.4 and unzip.
 wget https://github.com/glfw/glfw/archive/refs/tags/3.4.tar.gz
 tar -xvf 3.4.tar.gz 
 rm 3.4.tar.gz
+
+# Build glfw 3.4
 cd glfw-3.4/
 cmake .
 make
